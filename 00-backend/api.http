@@ -1,0 +1,27 @@
+POST http://localhost:1234/users/CreateUsers
+Content-Type: application/json
+
+{
+    "name": "Pablo",
+    "surname": "De La Iglesia",
+    "email": "olbapanidem@gmail.com",
+    "password": "chubizip007",
+    "phone_number": "609862500"
+}
+
+### get
+
+GET http://localhost:1234/users/
+
+###
+
+POST http://127.0.0.1:5000/create_user
+Content-Type: application/json
+
+{
+    "name": "Pablo",
+    "surname": "De La Iglesia",
+    "email": "pablo.medina.delaigles@gmail.com",
+    "password": "chubizip007",
+    "phone_number": "609862500"
+}

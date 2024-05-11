@@ -1,0 +1,162 @@
+.body-Profile {
+  margin: 0;
+  background: #F4F4F2;
+  font-family: 'JetBrains Mono';
+  display: contents !important;
+  place-content :initial !important;
+  min-width:min-content;
+  height: 20vh;
+}
+
+.navbar-Profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+.nav-links-Profile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links-Profile li {
+  padding: 0 20px;
+}
+
+.nav-links-Profile a {
+  text-decoration: none;
+  color: #5B7B7A;
+  font-size: 16px;
+}
+
+.logo-Main {
+  /* Center the logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-Main img {
+  width: 200px; /* You can adjust as needed */
+}
+
+.header-EN {
+  background-color: #FF9F1C;
+  overflow: auto;
+  height: 5vh;
+}
+
+.header-EN-btn {
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 999px;
+  padding: 6px 16px;
+  border: 0;
+}
+
+.Access-Main {
+  display: contents;
+}
+
+.Access-Card {
+  background-color: #F4F4F2; /* Replace with the actual background color */
+  width: 300px; /* Adjust as necessary */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px #5B7B7A;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Replace with the actual font family */
+}
+
+.Access-Card-Img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; /* Adjust if more or less space is needed */
+  transform: rotate(25deg);
+}
+
+.Access-Card-Title {
+  color: #4A4E69; /* Replace with the actual text color */
+  margin-bottom: 10px;
+  font-size: 20px; /* Adjust to match the design */
+  font-weight: bold;
+  font-style: italic;
+}
+
+.Access-Card-SecondTitle {
+  color: #4A4E69; /* Replace with the actual text color */
+  margin-bottom: 20px;
+  font-size: 14px; /* Adjust to match the design */
+  font-weight: medium;
+  font-style: normal;
+}
+
+.Access-Card-InputContainer {
+  margin-bottom: 20px;
+}
+
+.Access-Card-Input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Space between input fields */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px;
+  box-sizing: border-box; /* Makes sure padding doesn't affect width */
+}
+
+.Access-Card-Btn-Access {
+  background-color: #FF9F1C; /* First button color, replace with actual color */
+  color: #5B7B7A;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Border color */
+  cursor: pointer;
+  margin-bottom: 10px; /* Space between buttons */
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: medium;
+}
+
+.Access-Card-Btn-Pwd {
+  background-color: #F4F4F2; /* First button color, replace with actual color */
+  color: #5B7B7A;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Border color */
+  cursor: pointer;
+  margin-bottom: 10px; /* Space between buttons */
+  width: 75%;
+  box-sizing: border-box;
+  font-weight: medium;
+  font-size: 12px;
+}
+
+.Access-Card-Btn:nth-child(4) {
+  background-color: #555; /* Second button color, replace with actual color */
+}
+
+/* If there are any hover effects, they can be styled as follows: */
+.Access-Card-Btn:hover {
+  opacity: 0.8;
+}
+
+/* Terms and Privacy Policy styles */
+.Access-Card-Terms {
+  font-size: 12px; /* Adjust to match the design */
+  color: #888; /* Text color for terms */
+  margin-top: 20px;
+}
+
+/* Footer with the company or product name */
+.Access-Card-Footer {
+  color: #000; /* Replace with actual color */
+  font-size: 18px; /* Adjust to match the design */
+  margin-top: 20px;
+}

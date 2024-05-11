@@ -1,0 +1,147 @@
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Header */
+    .headerMain {
+        background-color: #FF9F1C;
+        overflow: auto;
+        height: 10vh;
+      }
+    .navbarMain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 2vh;
+        /* padding: 100px 5%; */
+    }
+    .navbarUL {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbarLI {
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navbarA {
+        text-decoration: none;
+    }
+    .navbarDIV {
+        max-width: 100px;
+        min-width: 50px;
+    }
+
+    /* Profile display */
+
+    .containerProfile {
+        display: flex;
+        height: 90vh;
+    }
+
+    .containerOneQuarter {
+        flex: 1;
+        border: solid;
+        border-color: #F4F4F8;
+        border-top: #F4F4F8;
+        border-left: #F4F4F8;
+        border-bottom: #F4F4F8;
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+    .containerThreeQuarter {
+        flex: 3;
+    }
+
+    .profileH {
+        text-align: center;
+        color: #4A4E69
+    }
+
+    .profileP {
+        text-align: center;
+        color: #4A4E69;
+    }
+
+    .profileButton {
+        display: flex;
+        flex-direction: column; /* Alinea los botones verticalmente */
+        align-items: center; /* Centra los botones horizontalmente */
+        justify-content: center; /* Centra los botones verticalmente */
+        /*height: 100vh; /* Altura del contenedor (ajusta según necesidades) */
+        gap: 10px; 
+    }
+
+    .profileButton button {
+        background-color: #FF9F1C; /* Color naranja */
+        color: #4A4E69; /* Texto blanco */
+        font-size: 16px; /* Tamaño de la fuente */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin bordes */
+        border-radius: 5px; /* Esquinas redondeadas */
+        cursor: pointer; /* Cursor tipo puntero */
+        transition: background-color 0.3s;  /* Transición suave del color de fondo */
+    }
+
+    .profileContainerSkills {
+        border: solid;
+        border-color: #F4F4F8;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .profileContainerTitle {
+        padding-left: 20px;
+        color: #4A4E69;
+    }
+
+    .profileContainerSkillBox {
+        display: flex;
+    }
+
+    .profileSkillBox1 {
+        text-align: center;
+        flex: 1;
+    }
+    .profileSkillBox2 {
+        text-align: center;
+        flex: 1;
+    }
+    .profileSkillBox3 {
+        text-align: center;
+        flex: 1;
+    }
+    .profileSkillBox4 {
+        text-align: center;
+        flex: 1;
+    }
+
+    .profileSkillBtn {
+        display: flex;
+        flex-direction: column; /* Alinea los botones verticalmente */
+        align-items: center; /* Centra los botones horizontalmente */
+        justify-content: center; /* Centra los botones verticalmente */
+        /*height: 100vh; /* Altura del contenedor (ajusta según necesidades) */
+        gap: 10px; 
+    }
+
+    .profileSkillBtn button {
+        background-color: gold; /* Color naranja */
+        color: black; /* Texto blanco */
+        font-size: 16px; /* Tamaño de la fuente */
+        padding: 10px 50px; /* Espaciado interno */
+        border: solid; /* Sin bordes */
+        border-color: #d0d0d4;
+        border-radius: 5px; /* Esquinas redondeadas */
+        cursor: pointer; /* Cursor tipo puntero */
+        transition: background-color 0.3s; 
+    }
+}
