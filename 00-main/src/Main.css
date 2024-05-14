@@ -35,6 +35,12 @@
     .navbarA {
         text-decoration: none;
     }
+
+    .navbarA :active {
+        background-color: blue;
+        color: yellow;
+    }
+
     .navbarDIV {
         max-width: 100px;
         min-width: 50px;
@@ -57,6 +63,7 @@
         padding-top: 20vh;
         padding-bottom: 20vh;
     }
+
     .containerThreeQuarter {
         flex: 3;
     }
@@ -144,4 +151,275 @@
         cursor: pointer; /* Cursor tipo puntero */
         transition: background-color 0.3s; 
     }
+
+    /* Contact */
+
+    .containerOneQuarterContact {
+        flex: 1;
+        border: solid;
+        border-color: #F4F4F8;
+        border-top: #F4F4F8;
+        border-left: #F4F4F8;
+        border-bottom: #F4F4F8;
+        padding-bottom: 20vh;
+    }
+
+    .containerOneQuarterContact div {
+        border: solid;
+        border-color: #F4F4F8;
+        padding: 20px;
+        border-right: #F4F4F8;
+        border-top: #F4F4F8;
+    }
+
+    .containerOneQuarterContact a {
+        text-decoration: none;
+        color: #4A4E69;
+    }
+
+    .containerOneQuarterContactA {
+        /* Deshabilitar */
+        color:#F4F4F8;
+    }
+
+    .contactContainer {
+        display: flex;
+        border: solid;
+        border-color: #F4F4F8;
+        margin: 20px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .contactPhoto {
+        flex: 1;
+    }
+
+    .contactInfo {
+        flex: 1;
+        border: solid;
+        border-color:#F4F4F8;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        align-content: center;
+    }
+
+    .contactInfo h3, p, h4 {
+        text-align: center;
+    }
+    .contactSkillsContainer {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactSkillsContainerDiv {
+        flex: 1;
+        border: solid;
+        border-color:#F4F4F8;
+        border-radius: 10px;
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 50px;
+    }
+    .contactSkillsContainer p {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .contactSkillList {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 75px;
+    }
+    .contactSkillList button {
+        padding: 10px;
+        margin: 10px;
+        flex: 1;
+        background-color: gold;
+        border: solid;
+        border-color: #d0d0d4;
+        border-radius: 10px;
+    }
+
+    .contactButtonContainer {
+        flex:0.75;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .contactButtonContainer1 {
+        flex: 2;
+        margin: 20px;
+        margin-bottom: 2px;
+        border: none;
+        border-radius: 10px;
+        background-color: #FF9F1C;
+    }
+
+    .contactButtonContainer2 {
+        flex: 1;
+        margin: 20px;
+        /* margin-top: 50px; */
+        /* margin-top: 5px; */
+        /* height: 20px; */
+        border: none;
+        border-radius: 10px;
+        background-color: red;
+    }
+
+    /* Search */
+
+    .containerSearch {
+        display: flex;
+        flex-direction: row;
+        min-height: 90vh;
+    }
+
+    .containerOneQuarterSearch {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        border-color: #F4F4F8;
+        border-top: #F4F4F8;
+        border-left: #F4F4F8;
+        border-bottom: #F4F4F8;
+    }
+
+    .containerThreeQuarterSearch {
+        flex:3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .searcherSearchBtn {
+        background-color: #FF9F1C !important;
+        padding: 5px;
+        margin: 5px !important;
+        border-radius: 10px;
+        border: none !important;
+        font-size: medium;
+    }
+
+    .searcherSearchBtnClear {
+        background-color:#4A4E69 !important;
+        color: white !important;
+        padding: 5px;
+        margin: 5px !important;
+        border-radius: 10px;
+        border: none !important;
+        font-size: small;
+        cursor: pointer;
+    }
+
+    .searcherSearch {
+        margin: 10px;
+    }
+
+    .searcherSearch p {
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .searcherSearch input {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    .searcherSearch ul {
+        max-width: 400px;
+    }
+
+    .searcherSearch button {
+        background-color:#F4F4F8;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 10px;
+        border: solid;
+        border-color: #d0d0d4;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .searchResults {
+        margin: 20px;
+        border: solid;
+        border-color: #F4F4F8;
+        border-radius: 10px;
+    }
+
+    .searchResults p {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .searchResults ul {
+        list-style: none;
+    }
+
+    .searchResults li {
+        display: inline-block;
+        margin: 10px;
+        background-color: #F4F4F8;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 12px;
+        /* width: 200px; */
+        text-align: center;
+    }
+
+    .searchResultsBtnClear {
+        background-color:#4A4E69 !important;
+        color: white !important;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 10px !important;
+        border-radius: 10px;
+        border: none !important;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .searchResultsContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ratingButtons {
+        padding-top: 10px;
+        display: flex;
+        gap: 5px;
+        /* margin-left: 10px; */
+        align-items: center;
+    }
+
+    .ratingButton {
+        border: none;
+        border-radius: 50%;
+        color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .searchMainBtn {
+        margin: 10px;
+        background-color:#FF9F1C !important;
+        color: black !important;
+        padding: 5px;
+        margin-left: 30px !important;
+        border-radius: 10px;
+        border: none !important;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
 }

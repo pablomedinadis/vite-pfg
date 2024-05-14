@@ -4,3 +4,4 @@ export const usersRouter = Router()
 
 usersRouter.get('/', UserController.getUsers)
 usersRouter.post('/CreateUsers', UserController.createUser)
+// usersRouter.get('/Lang', UserController.getLang)

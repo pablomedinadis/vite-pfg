@@ -3,6 +3,7 @@ import { AccessCard } from './AccessCard';
 import { RegisterCard } from './RegisterCard';
 import { Profile } from './Profile';
 import { Contact } from './Contact';
+import { Search } from './Search';
 
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
                 <Route path="/register" element={<RegisterCard />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path='/contact' element={<Contact />} />
+                <Route path='/search' element={<Search />} />
               </>
             </Routes>
         </BrowserRouter>

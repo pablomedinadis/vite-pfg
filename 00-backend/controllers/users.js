@@ -24,4 +24,11 @@ export class UserController {
             res.status(500).json({ message: "Server error while creating user: " + error.message });
         }
     }
+
+    static async getLang (req,res) {
+        const languages = await UserModel.getLang()
+        console.log(languages)
+        res.json(languages)
+    }
+
 }

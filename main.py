@@ -40,6 +40,23 @@ class API:
         def index():
             return "EngiNet App"
         
+
+        @self.api.route("/skills", methods = ["GET"])
+        def get_skills():
+            select_query = sql.SQL("SELECT skillname FROM public.skills")
+            self.cursor.execute(select_query)
+            self.skill_pre = self.cursor.fetchall()
+            skills = self.skill_pre
+            return skills
+        
+        @self.api.route("/languages", methods=["GET"])
+        def get_languages():
+            select_query = sql.SQL("SELECT languagename FROM public.languages")
+            self.cursor.execute(select_query)
+            self.lang_pre = self.cursor.fetchall()
+            languages = self.lang_pre
+            return languages
+        
         @self.api.route("/users", methods=["GET"])
         def get_events():
             select_query = sql.SQL("SELECT name, surname, email, password, phonenumber FROM public.users")
@@ -198,7 +215,7 @@ class API:
                     "SkillName": row[0],
                     "SkillProficiency": row[1],
                     "LanguageName": row[2],
-                    "LanguageProficiency": row[3]
+                    # "LanguageProficiency": row[3]
                 })
             
             skill_lang_search = self.skills_languages
