@@ -24,7 +24,7 @@ export function MainHeader(){
                     <li className='navbarLI'><a className='navbarA' href="/contact">Contactos</a></li>
                 </ul>
                 <div className='navbarDIV'> 
-                    <img src="assets/logo.png" alt="" />
+                    <img className="navbarImg" src="src/assets/logo.png" alt="" />
                 </div>
                 <ul className='navbarUL'>
                     <li className='navbarLI'><a className='navbarA' href="/search">Buscar</a></li>

@@ -78,6 +78,85 @@ class API:
 
             return events_search
         
+        @self.api.route('/getAllInfo', methods=['GET'])
+        def getAll():
+            
+            # Fetch data from the database
+            self.cursor.execute("SELECT userid, name, surname FROM public.users")
+            users = self.cursor.fetchall()
+
+            self.cursor.execute("SELECT userid, languageid, proficiencylevel FROM public.userlanguages")
+            user_languages = self.cursor.fetchall()
+
+            self.cursor.execute("SELECT userid, skillid, proficiencylevel, ismainskill FROM public.userskills")
+            user_skills = self.cursor.fetchall()
+
+            self.cursor.execute("SELECT languageid, languagename FROM public.languages")
+            languages = self.cursor.fetchall()
+
+            self.cursor.execute("SELECT skillid, skillname FROM public.skills")
+            skills = self.cursor.fetchall()
+
+            languages_dict = {lang[0]: lang[1] for lang in languages}
+            skills_dict = {skill[0]: skill[1] for skill in skills}
+
+            # Create the final structure
+            users_dict = {}
+
+            for user in users:
+                user_id, name, surname = user
+                users_dict[user_id] = {
+                    "name": name,
+                    "surname": surname,
+                    "skills": [],
+                    "languages": []
+                }
+
+            for user_skill in user_skills:
+                user_id, skill_id, proficiency_level, is_main_skill = user_skill
+                if user_id in users_dict:
+                    users_dict[user_id]["skills"].append({
+                        "skillname": skills_dict[skill_id],
+                        "proficiencylevel": proficiency_level,
+                        "ismainskill": is_main_skill
+                    })
+
+            for user_lang in user_languages:
+                user_id, language_id, proficiency_level = user_lang
+                if user_id in users_dict:
+                    users_dict[user_id]["languages"].append({
+                        "languagename": languages_dict[language_id],
+                        "proficiencylevel": proficiency_level
+                    })
+
+            # Convert the users_dict to JSON
+            users_json = json.dumps(users_dict, indent=4)
+
+            return users_json
+            # select_users = sql.SQL("SELECT id, name, surname FROM public.users")
+            # self.cursor.execute(select_users)
+            # self.users_pre = self.cursor.fetchall()
+
+            # select_user_lang = sql.SQL("SELECT userid, languageid, proficiencylevel FROM public.userlanguages")
+            # self.cursor.execute(select_user_lang)
+            # self.users_pre = self.cursor.fetchall()
+
+            # select_user_skills = sql.SQL("SELECT userid, skillid, proficiencylevel, ismainskill" FROM public.userskills)
+            # self.cursor.execute(select_user_skills)
+            # self.users_pre = self.cursor.fetchall()
+
+            # select_lang = sql.SQL("SELECT languageid, languagename FROM public.languages")
+            # self.cursor.execute(select_lang)
+            # self.lang_pre = self.cursor.fetchall()
+
+            # select_skills = sql.SQL("SELECT skillid, skillname FROM public.skills")
+            # self.cursor.execute(select_skills)
+            # self.skill_pre = self.cursor.fetchall()
+
+
+
+
+        
         @self.api.route('/create_user', methods=['POST'])
         def create_user():
             data = request.get_json()

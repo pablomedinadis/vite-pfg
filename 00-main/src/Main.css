@@ -17,10 +17,12 @@
         align-items: center;
         margin-left: 200px;
         margin-right: 200px;
-        padding-top: 2vh;
+        height: 10vh;
+        align-content: center;
         /* padding: 100px 5%; */
     }
     .navbarUL {
+        flex:3;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -31,20 +33,28 @@
         padding: 20px;
         padding-left: 30px;
         padding-right: 30px;
+        font-size: 18px;
     }
+    .navbarLI:hover {
+        font-weight: bold;
+    }
+
     .navbarA {
         text-decoration: none;
     }
 
-    .navbarA :active {
-        background-color: blue;
-        color: yellow;
+    .navbarDIV {
+        flex:1;
     }
 
-    .navbarDIV {
-        max-width: 100px;
-        min-width: 50px;
-    }
+    .navbarImg {
+        /* max-width: 50%; */
+        align-items: center;
+        width: 75%;
+        height: auto;
+        margin-bottom: 0px; /* Adjust if more or less space is needed */
+        transform: rotate(25deg);
+      }
 
     /* Profile display */
 
@@ -56,7 +66,7 @@
     .containerOneQuarter {
         flex: 1;
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
         border-top: #F4F4F8;
         border-left: #F4F4F8;
         border-bottom: #F4F4F8;
@@ -100,7 +110,8 @@
 
     .profileContainerSkills {
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
+        border-radius: 10px;
         padding: 20px;
         margin: 20px;
     }
@@ -157,7 +168,7 @@
     .containerOneQuarterContact {
         flex: 1;
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
         border-top: #F4F4F8;
         border-left: #F4F4F8;
         border-bottom: #F4F4F8;
@@ -166,7 +177,7 @@
 
     .containerOneQuarterContact div {
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
         padding: 20px;
         border-right: #F4F4F8;
         border-top: #F4F4F8;
@@ -185,7 +196,7 @@
     .contactContainer {
         display: flex;
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
         margin: 20px;
         border-radius: 20px;
         padding: 10px;
@@ -198,7 +209,7 @@
     .contactInfo {
         flex: 1;
         border: solid;
-        border-color:#F4F4F8;
+        border-color:#d0d0d4;
         padding: 10px;
         margin: 20px;
         border-radius: 10px;
@@ -216,7 +227,7 @@
     .contactSkillsContainerDiv {
         flex: 1;
         border: solid;
-        border-color:#F4F4F8;
+        border-color:#d0d0d4;
         border-radius: 10px;
         margin: 10px;
         padding-top: 10px;
@@ -283,7 +294,7 @@
         display: flex;
         flex-direction: column;
         border: solid;
-        border-color: #F4F4F8;
+        border-color:#d0d0d4;
         border-top: #F4F4F8;
         border-left: #F4F4F8;
         border-bottom: #F4F4F8;
@@ -347,7 +358,7 @@
     .searchResults {
         margin: 20px;
         border: solid;
-        border-color: #F4F4F8;
+        border-color: #d0d0d4;
         border-radius: 10px;
     }
 
@@ -363,7 +374,7 @@
     .searchResults li {
         display: inline-block;
         margin: 10px;
-        background-color: #F4F4F8;
+        background-color: #d0d0d4;
         padding: 10px;
         border-radius: 10px;
         font-size: 12px;
@@ -384,7 +395,7 @@
     }
 
     .searchResultsContainer {
-        padding-left: 20px;
+        padding-left: 10px;
         padding-right: 20px;
         padding-bottom: 20px;
     }
@@ -400,7 +411,7 @@
     .ratingButton {
         border: none;
         border-radius: 50%;
-        color: white;
+        color: black;
         width: 30px;
         height: 30px;
         display: flex;
@@ -420,6 +431,181 @@
         border: none !important;
         font-size: 14px;
         cursor: pointer;
+    }
+
+    .searchMainBtn:hover {
+        background-color: darkorange;
+    }
+
+    /* SearchResults */
+
+    .resultList {
+        list-style: none;
+        margin-left: 0px !important;
+        margin-right: 10px;
+    }
+
+    .resultContainer {
+        border:solid;
+        border-color: #d0d0d4;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
+    .resultDiv {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resultDiv1 {
+        flex: 1;
+        align-content: center;
+        border: solid;
+        padding: 5px;
+        border-color: #d0d0d4;
+        border-radius: 10px;
+    }
+
+    .resultDiv1 p {
+        text-align: center;
+    }
+
+    .resultDiv2 {
+        flex: 3;
+    }
+
+    .resultDiv3 {
+        flex: 1;
+    }
+
+    .resultDiv2 ul {
+        list-style: none;
+    }
+
+    .resultDiv2Container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resultDiv2Content1 {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .resultDiv2Content2 {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .resultContent {
+        border: solid;
+        border-color: #d0d0d4;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    /* Search Result IA */
+
+    .languageItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .skillItem {
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: black;
+        font-weight: medium;
+        font-size: 14px;
+    }
+    
+    .userActions {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .userActionBtn {
+        padding: 10px;
+        background-color:#FF9F1C;
+        color:#4A4E69;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: medium;
+    }
+    
+    .userActionBtn:hover {
+        background-color: darkorange;
+    }
+
+    .userCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid #d0d0d4;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .userInfo {
+        width: 20%;
+        border: solid #d0d0d4;
+        margin: 10px;
+        align-content: center;
+        border-radius: 10px;
+    }
+    
+    .userSkills {
+        width: 60%;
+        margin: 10px;
+    }
+    
+    .userLanguages, .userMainSkills {
+        margin-bottom: 5px;
+    }
+
+    .userLanguages p, .userMainSkills p{
+        padding-left: 10px;
+        text-align: left;
+    }
+    
+    .skillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    .userList {
+        list-style-type: none;
+        padding: 0;
+        font-size: 14px;
+        color:#4A4E69;
+    }
+    
+    .userItem {
+        margin-bottom: 20px;
+    }
+
+    .mt {
+        margin-top:0%;
+    }
+
+    .resultTitle {
+        text-align: left;
+        padding-left: 10px;
+        margin: 10px;
+        margin-top: 40px;
     }
 
 }

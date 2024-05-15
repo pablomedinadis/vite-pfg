@@ -61,19 +61,19 @@ export function AccessCard() {
 
     return (
         <div className='Access-Main'>
-        <article className="Access-Card">
-            <img className="Access-Card-Img" src="src/assets/logo.png" alt="MainLogo" />
-            <h1 className="Access-Card-Title">¿Estás de vuelta?</h1>
-            <p className="Access-Card-SecondTitle">Accede con tu Mail</p>
-            <div className="Access-Card-InputContainer">
-                <input className="Access-Card-Input" type="text" placeholder="Mail" value={email} onChange={handleEmailChange} />
-                <input className="Access-Card-Input" type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
-            </div>
-            <button className="Access-Card-Btn-Access" onClick={handleLogin}>Iniciar sesión</button>
-            <button className="Access-Card-Btn-Pwd" onClick={handleForgotPassword}>¿Olvidaste la contraseña?</button>
-            <button className="Access-Card-Btn-Pwd" onClick={redirect}>Regístrate</button>
-            <p className="Access-Card-Terms">Al pulsar 'Iniciar Sesión' acepta los términos de servicio y privacidad</p>
-        </article>
+            <article className="Access-Card">
+                <img className="Access-Card-Img" src="src/assets/logo.png" alt="MainLogo" />
+                <h1 className="Access-Card-Title">¿Estás de vuelta?</h1>
+                <p className="Access-Card-SecondTitle">Accede con tu Mail</p>
+                <div className="Access-Card-InputContainer">
+                    <input className="Access-Card-Input" type="text" placeholder="Mail" value={email} onChange={handleEmailChange} />
+                    <input className="Access-Card-Input" type="password" placeholder="Password" value={password} onChange={handlePasswordChange} />
+                </div>
+                <button className="Access-Card-Btn-Access" onClick={handleLogin}>Iniciar sesión</button>
+                <button className="Access-Card-Btn-Pwd" onClick={handleForgotPassword}>¿Olvidaste la contraseña?</button>
+                <button className="Access-Card-Btn-Pwd" onClick={redirect}>Regístrate</button>
+                <p className="Access-Card-Terms">Al pulsar 'Iniciar Sesión' acepta los términos de servicio y privacidad</p>
+            </article>
         </div>
     );
 }

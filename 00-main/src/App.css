@@ -60,6 +60,7 @@
 
 .Access-Main {
   display: contents;
+  height: 100vh;
 }
 
 .Access-Card {
@@ -67,10 +68,16 @@
   width: 300px; /* Adjust as necessary */
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 4px 8px #5B7B7A;
   border-radius: 8px;
   text-align: center;
   font-family: 'Arial', sans-serif; /* Replace with the actual font family */
+  height: 90vh;
+  margin: 20px;
+  align-content: center;
+  border: 1px solid;
+  border-color:#5B7B7A;
+  margin-left: 100px;
+  margin-right: 10  00px;
 }
 
 .Access-Card-Img {
